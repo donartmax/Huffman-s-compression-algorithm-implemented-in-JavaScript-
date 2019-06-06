@@ -1,1 +1,1 @@
-# Huffman-s-compression-algorithm-implemented-in-JavaScript-
+# Huffman's compression algorithm implemented in JavaScript
