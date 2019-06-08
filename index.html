@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hafmanovo kodiranje </title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="container px-4">
+		<h1 class="text-3xl font-bold">Hafmanovo kodiranje</h1>
+
+		<label class="block font-bold mb-1 md:mb-0 pr-4">
+			Unesite tekst za kodiranje
+		</label>
+		<textarea
+			class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+			id="input" rows="5" cols="80">Matematika</textarea>
+		<button onClick="kodiraj()"
+			class="bg-blue-500 hover:bg-blue-700 text-white mt-2 font-bold py-2 px-4 rounded">
+			Kodiraj
+		</button>
+		<p>Dužina teksta(br. karaktera * 8bit): <span id="input_length"></span>
+		</p>
+		<div class="flex flex-wrap">
+			<div class="w-full m-2 md:w-1/3">
+				<h3 class="text-lg font-semibold">Verovatnoće: </h3>
+				<div id="probabilities"></div>
+			</div>
+			<div class="w-full m-2 md:w-1/3">
+			<h3 class="text-lg font-semibold">Kodovi</h3>
+			<div id="codes"></div>
+			</div>	
+		</div>
+		<h3 class="text-lg mt-2 font-semibold">Rezultat kodiranja: </h3>
+		<div id="result"></div>
+		<p class="font-semibold">Dužina rezultata u bitovima: </p>
+		<div id="result_length"></div>
+
+	</div>
+
+
+	<script src="./js/main.js">
+	</script>
+</body>
+
+</html>
